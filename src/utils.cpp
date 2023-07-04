@@ -1,3 +1,4 @@
+@@ -0,0 +1,112 @@
 #include "utils.h"
 #include <beast/core/detail/base64.hpp>
 #include <ripple/basics/StringUtilities.h>
@@ -54,7 +55,7 @@ boost::optional<std::string> signUNL (
 
     data.pop_back();
     data += "]}";
-    std::cout << valsMsg << std::endl;
+    // std::cout << valsMsg << std::endl;
 
     auto pubKey = derivePublicKey (KeyType::ed25519, ephemSecKey);
 
